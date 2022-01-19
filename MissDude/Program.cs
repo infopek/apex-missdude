@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace MissDude
 {
@@ -33,6 +34,14 @@ namespace MissDude
 							shots++;
 
 							Console.WriteLine($"Shots: {shots}\nHits: {hits}\nRatio: {Math.Round((float)hits / shots, 2)}");
+							break;
+						case ConsoleKey.R:			// Reset stats
+							Console.Clear();
+
+							shots = 0;
+							hits = 0;
+
+							Console.WriteLine($"Shots: {shots}\nHits: {hits}\nRatio: + L + rip bozo");
 							break;
 						default:
 							break;
